@@ -32,15 +32,16 @@ function App() {
   return (
     <div className="App">
       <div className="age-calculator-container">
-        <h1>Hitung Umur Online</h1>
+        <h1 className='title'>Hitung Umur Online</h1>
         <input
           className="age-input"
           type="text"
-          placeholder="Masukkan 2 digit tahun"
+          placeholder="Ketik 2 digit terakhir pada tahun."
           value={yearInput}
           onChange={(e) => setYearInput(e.target.value)}
           maxLength="2"
         />
+        <p className='example'>Contoh: jika 1967 maka masukkan angka 67.</p>
         {age !== null && (
           <p className="age-result">{age} Tahun</p>
         )}
