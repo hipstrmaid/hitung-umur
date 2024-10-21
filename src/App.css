@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -35,4 +35,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+}
+
+.age-calculator-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.age-input {
+  font-size: 24px;
+  padding: 10px;
+  width: 150px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.age-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.age-result {
+  font-size: 20px;
+  color: #333;
+}
+
+.age-input::placeholder {
+  font-size: 12px; /* Atur ukuran font yang lebih kecil */
+  color: #888; /* Kamu juga bisa mengubah warnanya jika diinginkan */
+}
+
+.age-calculator-container p {
+  color: #282c34;
+  font-weight: 500;
 }
