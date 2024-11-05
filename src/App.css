@@ -4,6 +4,33 @@
 
 body {
   background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  /* background-size: cover; */
+  background-repeat: repeat;
+  background-position: center;
+  animation: changeBackground 25s infinite; /* 5 seconds for each image */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("/public/img/1.jpeg");
+  }
+  20% {
+    background-image: url("/public/img/2.jpeg");
+  }
+  40% {
+    background-image: url("/public/img/3.jpeg");
+  }
+  60% {
+    background-image: url("/public/img/4.jpeg");
+  }
+  80% {
+    background-image: url("/public/img/5.jpeg");
+  }
+  100% {
+    background-image: url("/public/img/1.jpeg");
+  } /* Loop back to the first */
 }
 
 .age-calculator-container {
