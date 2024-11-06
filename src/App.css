@@ -8,28 +8,20 @@ body {
   height: 100vh;
   /* background-size: cover; */
   background-repeat: repeat;
-  background-position: center;
-  animation: changeBackground 25s infinite; /* 5 seconds for each image */
+  background-position: left;
+  animation: changeBackground 30s infinite; /* 5 seconds for each image */
 }
 
 @keyframes changeBackground {
   0% {
     background-image: url("/public/img/1.jpeg");
   }
-  20% {
+  80% {
     background-image: url("/public/img/2.jpeg");
   }
-  40% {
-    background-image: url("/public/img/3.jpeg");
-  }
-  60% {
-    background-image: url("/public/img/4.jpeg");
-  }
-  80% {
-    background-image: url("/public/img/5.jpeg");
-  }
+
   100% {
-    background-image: url("/public/img/1.jpeg");
+    background-image: url("/public/img/4.jpeg");
   } /* Loop back to the first */
 }
 
@@ -41,6 +33,7 @@ body {
   background-color: #f0f0f0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: inline-block;
+  box-shadow: 5px 5px #505050;
 }
 
 .age-input {
